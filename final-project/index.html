@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Search Image</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="#" value="Nature">Nature</a>
+          <a href="#" value="Animals">Animals</a>
+          <a href="#" value="Cars">Cars</a>
+          <a href="#" value="Landscape">Landscape</a>
+          <a href="#" value="Art">Art</a>
+        </div>
+      </div>
+      <span
+        style="font-size: 35px; cursor: pointer; font-weight: 600"
+        onclick="openNav()"
+        >&#9776;
+      </span>
+      <form>
+        <label for="search">Search</label>
+        <input
+          required=""
+          pattern=".*\S.*"
+          type="search"
+          class="input"
+          id="search"
+        />
+        <span class="caret"></span>
+      </form>
+      <h1>khannn</h1>
+    </div>
+    <div class="container">
+      <img
+        src="Beige Aesthetic Personal Brand Website Blog Banner.png"
+        alt=""
+        draggable="false"
+      />
+      <div class="text">
+        <h2><span>Premier</span> Image Generator</h2>
+        <br />
+        <h3><span>ON</span> Your Interest</h3>
+        <div class="arrow">›</div>
+      </div>
+    </div>
+    <div class="container-img">
+      <p>&times;</p>
+      <div
+        id="image-track"
+        data-mouse-down-at="0"
+        data-prev-percentage="0"
+      ></div>
+      <button class="show-morebtn">Show Moree</button>
+    </div>
+    <script src="work.js"></script>
+  </body>
+</html>
